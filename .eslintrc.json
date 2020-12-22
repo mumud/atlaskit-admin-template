@@ -1,0 +1,26 @@
+{
+  "plugins": ["jest","cypress"],
+  "extends": ["eslint:recommended","airbnb","plugin:jest/recommended","plugin:cypress/recommended"],
+  "parser": "babel-eslint",
+  "rules": {
+    "indent": ["warn", 2],
+    "react/jsx-indent": ["warn", 2],
+    "max-len": [1, 120, 2],
+    "quote-props": [1, "consistent-as-needed"],
+    "react/jsx-filename-extension": 0,
+    "react/prop-types": 0,
+    "import/no-extraneous-dependencies": 0,
+    "quotes": 0,
+    "linebreak-style": 0
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    },
+  },
+}
